@@ -1,9 +1,17 @@
-import { Button } from './components/ui/button'
+import Header from "./components/Header";
+import { ThemeProvider } from "./components/theme-provider";
+import { Button } from "./components/ui/button";
 
-function App() {
+const App = () => {
   return (
-      <Button>sadadad</Button>
-  )
-}
+    <ThemeProvider defaultTheme="dark">
+      <div className="relative flex min-h-screen flex-col bg-background">
+        <Header />
 
-export default App
+        <Button>qaz</Button>
+      </div>
+    </ThemeProvider>
+  );
+};
+
+export default App;
