@@ -1,15 +1,17 @@
 import { Download } from "lucide-react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const DownloadPDF = () => {
   return (
-    <div className="group p-2 pl-6 flex flex-row justify-between mx-auto items-center border border-[cadetblue] rounded-full cursor-pointer">
-      <div>Download PDF</div>
-
-      <Button variant="link" className="group-hover:animate-bounce">
-        <Download />
-      </Button>
-    </div>
+    <motion.button className="mx-auto" whileTap={{ scale: 0.85 }}>
+      <div className="p-2 pl-6 flex flex-row justify-between items-center border border-[cadetblue] rounded-full cursor-pointer">
+        <div>Download PDF</div>
+        <Button variant="link">
+          <Download />
+        </Button>
+      </div>
+    </motion.button>
   );
 };
 
