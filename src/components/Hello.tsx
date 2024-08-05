@@ -8,12 +8,30 @@ const Hello = () => {
 
   return (
     <div className="flex flex-col w-full items-center justify-center pt-8 gap-6">
-      <div className="text-[76px] font-bold">
+      <motion.div
+        className="text-[76px] font-bold flex items-center"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <span className="bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent pr-4">
           Hi, I'm Max Levchuk
         </span>
-        <span>👋</span>
-      </div>
+
+        <motion.span
+          initial={{ scale: 0 }}
+          animate={{ scale: 1.2 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 10,
+            duration: 0.5,
+            delay: 1,
+          }}
+        >
+          👋
+        </motion.span>
+      </motion.div>
 
       <div className="text-3xl max-w-[600px] font-light text-center">
         {text.map((el, i) => (

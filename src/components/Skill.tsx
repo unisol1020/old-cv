@@ -17,7 +17,9 @@ const Skill = ({
         <div className="text-xl font-bold">{label}</div>
       </div>
 
-      <div className="text-[#626262] text-center">{description}</div>
+      <div className="text-[#626262] text-sm font-normal text-center">
+        {description}
+      </div>
     </div>
   );
 };
