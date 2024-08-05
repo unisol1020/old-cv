@@ -1,5 +1,45 @@
+import Experience from "@/components/Experience";
+import { Card, CardContent } from "@/components/ui/card";
+import experience from "@/const/experience";
+import { motion } from "framer-motion";
+
 const ExperiencePage = () => {
-  return null;
+  return (
+    <div className="flex flex-col gap-20 items-center pt-20">
+      <div className="text-3xl font-bold">All my pet projects 📚</div>
+
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
+        {experience.map((e) => (
+          <motion.div
+            key={e.title}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.5,
+            }}
+          >
+            <Card className="h-full">
+              <CardContent className="pt-6 h-full flex justify-center">
+                <Experience {...e} />
+              </CardContent>
+            </Card>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  );
 };
 
 export default ExperiencePage;

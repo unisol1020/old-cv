@@ -5,11 +5,6 @@ const menu = [
     link: "/skills",
   },
   {
-    title: "📚",
-    overlayText: "My projects list",
-    link: "/projects",
-  },
-  {
     title: "👨‍💻",
     overlayText: "My experience",
     link: "/experience",
