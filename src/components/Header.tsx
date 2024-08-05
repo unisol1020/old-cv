@@ -1,10 +1,47 @@
+import { useEffect, useState } from "react";
 import { ModeToggle } from "./ModeToggle";
+import { cn } from "@/lib/utils";
+import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header className="sticky top-2 z-50 w-full">
-      <div className="container rounded-3xl flex h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="w-full"></div>
+      <div
+        className={cn(
+          "container rounded-full flex flex-row justify-between h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500",
+          scrolled && "border border-[cadetblue]",
+        )}
+      >
+        <div className="flex flex-row items-center gap-10">
+          <Link to="/">
+            <img
+              className="size-10 rounded-full"
+              src="https://avatars.githubusercontent.com/u/66306912?v=4"
+              alt="profile-pic"
+            />
+          </Link>
+
+          <Menu />
+        </div>
+
         <div>
           <ModeToggle />
         </div>
