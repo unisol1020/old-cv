@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ModeToggle } from "./ModeToggle";
 import { cn } from "@/lib/utils";
 import Menu from "./Menu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,13 +31,20 @@ const Header = () => {
         )}
       >
         <div className="flex flex-row items-center gap-10">
-          <Link to="/">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "border border-[cadetblue] rounded-full transition-all duration-200"
+                : ""
+            }
+          >
             <img
               className="size-10 rounded-full"
               src="https://avatars.githubusercontent.com/u/66306912?v=4"
               alt="profile-pic"
             />
-          </Link>
+          </NavLink>
 
           <Menu />
         </div>
