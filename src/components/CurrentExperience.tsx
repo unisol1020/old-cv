@@ -9,7 +9,9 @@ const CurrentExperience = () => {
       <div className="text-3xl font-bold">I`m working at</div>
       <Experience {...experience.at(-1)} />
       <Link to="/experience">
-        <Button variant="outline">View my experience 👨‍💻</Button>
+        <Button variant="outline" size="lg">
+          View my experience 👨‍💻
+        </Button>
       </Link>
     </div>
   );

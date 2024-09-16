@@ -44,7 +44,9 @@ const SkillsPreview = () => {
       </motion.div>
 
       <Link to="/skills">
-        <Button variant="outline">Check my all skills 🛠</Button>
+        <Button variant="outline" size="lg">
+          Check my all skills 🛠
+        </Button>
       </Link>
     </div>
   );
