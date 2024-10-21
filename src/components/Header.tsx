@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-2 z-50 w-full">
+    <header className="sticky top-2 z-50 w-full p-2 md:p-0">
       <div
         className={cn(
           "container rounded-full flex flex-row justify-between h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500",
