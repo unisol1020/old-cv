@@ -22,7 +22,7 @@ const Header = () => {
     <header className="sticky top-2 z-50 w-full p-2 md:p-0">
       <div
         className={cn(
-          "container rounded-full flex flex-row justify-between h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500",
+          "container pl-4 pr-2 md:pl-8 md:pr-4 rounded-full flex flex-row justify-between h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500",
           scrolled && "border border-[cadetblue]",
         )}
       >
