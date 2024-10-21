@@ -7,7 +7,7 @@ const CurrentExperience = () => {
   return (
     <div className="flex flex-col gap-10 items-center">
       <div className="text-3xl font-bold">I`m working at</div>
-      <Experience {...experience.at(-1)} />
+      <Experience {...experience.at(0)} />
       <Link to="/experience">
         <Button variant="outline" size="lg">
           View my experience 👨‍💻

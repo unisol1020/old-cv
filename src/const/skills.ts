@@ -14,17 +14,17 @@ const skills = [
     from: 2021,
   },
   {
-    label: "PHP",
-    description:
-      "PHP is a general-purpose scripting language geared towards web development.",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-    from: 2020,
-  },
-  {
     label: "Node.js",
     description:
       "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment.",
     icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    from: 2022,
+  },
+  {
+    label: "Nest.js",
+    description:
+      "Nest.js is a back-end framework for building efficient, reliable and scalable server-side applications.",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1242px-NestJS.svg.png?20221211225055",
     from: 2022,
   },
   {
@@ -33,20 +33,6 @@ const skills = [
       "React is an open-source, front end, JavaScript library for building user interfaces or UI components.",
     icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     from: 2022,
-  },
-  {
-    label: "React Native",
-    description:
-      "React Native is an open-source mobile application framework created by Facebook.",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    from: 2023,
-  },
-  {
-    label: "Expo",
-    description:
-      "Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.",
-    icon: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*M4W1zKMuf0xmAcZwZgUcTQ.png",
-    from: 2023,
   },
   {
     label: "Next.js",
@@ -62,11 +48,26 @@ const skills = [
     from: 2021,
   },
   {
-    label: "Nest.js",
+    label: "PHP",
     description:
-      "Nest.js is a back-end framework for building efficient, reliable and scalable server-side applications.",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1242px-NestJS.svg.png?20221211225055",
-    from: 2022,
+      "PHP is a general-purpose scripting language geared towards web development.",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+    from: 2020,
+  },
+
+  {
+    label: "React Native",
+    description:
+      "React Native is an open-source mobile application framework created by Facebook.",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    from: 2023,
+  },
+  {
+    label: "Expo",
+    description:
+      "Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.",
+    icon: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*M4W1zKMuf0xmAcZwZgUcTQ.png",
+    from: 2023,
   },
   {
     label: "Express.js",

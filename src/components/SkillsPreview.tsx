@@ -37,7 +37,7 @@ const SkillsPreview = () => {
             },
           }}
         >
-          {skills.slice(0, 12).map((skill) => (
+          {skills.slice(0, 9).map((skill) => (
             <Skill key={skill.label} {...skill} />
           ))}
         </motion.div>
