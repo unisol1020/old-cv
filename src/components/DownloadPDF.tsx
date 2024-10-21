@@ -10,12 +10,9 @@ const DownloadPDF = () => {
       className="mx-auto"
       whileTap={{ scale: 0.85 }}
     >
-      <div className="p-2 pl-6 flex flex-row justify-between items-center border border-[cadetblue] rounded-full cursor-pointer">
-        <div>Download PDF</div>
-        <Button variant="link">
-          <Download />
-        </Button>
-      </div>
+      <Button variant="outline" size="lg">
+        <span className="mr-2">Download PDF</span> <Download />
+      </Button>
     </motion.a>
   );
 };
