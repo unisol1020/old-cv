@@ -31,7 +31,7 @@ const ExperiencePage = () => {
             }}
           >
             <Card className="h-full">
-              <CardContent className="pt-6 h-full flex justify-center">
+              <CardContent className="h-full flex justify-center">
                 <Experience {...e} />
               </CardContent>
             </Card>
