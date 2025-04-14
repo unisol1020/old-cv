@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { ModeToggle } from "./ModeToggle";
 import { cn } from "@/lib/utils";
-import Menu from "./Menu";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Menu from "./Menu";
+import { ModeToggle } from "./ModeToggle";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-2 z-50 w-full p-2 md:p-0">
+    <header className="sticky top-2 z-50 w-full flex justify-center p-2 md:p-0">
       <div
         className={cn(
           "container pl-4 pr-2 md:pl-8 md:pr-4 rounded-full flex flex-row justify-between h-16 max-w-screen-xl items-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-500",
