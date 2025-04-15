@@ -8,16 +8,16 @@ const Menu = () => {
       {menu.map((item) => (
         <NavLink
           className={({ isActive }) =>
-            isActive
-              ? "border-b border-[cadetblue] transition-all duration-200"
-              : ""
+            isActive ? "text-[cadetblue] transition-all duration-400" : ""
           }
           to={item.link}
           key={item.link}
         >
           <HoverCard>
             <HoverCardTrigger>
-              <div className="text-2xl p-2">{item.title}</div>
+              <div className="text-2xl p-2">
+                <item.icon />
+              </div>
             </HoverCardTrigger>
             <HoverCardContent>{item.overlayText}</HoverCardContent>
           </HoverCard>

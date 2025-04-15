@@ -1,11 +1,13 @@
+import { Hammer, Laptop } from "lucide-react";
+
 const menu = [
   {
-    title: "🛠",
+    icon: Hammer,
     overlayText: "My skills",
     link: "/skills",
   },
   {
-    title: "👨‍💻",
+    icon: Laptop,
     overlayText: "My experience",
     link: "/experience",
   },

@@ -1,3 +1,5 @@
+import { Calendar, MapPin } from "lucide-react";
+
 const Experience = ({
   startDate,
   endDate,
@@ -15,14 +17,18 @@ const Experience = ({
 }>) => {
   return (
     <div className="flex flex-col gap-5 items-center w-full">
-      <div className="text-sm">
-        <span className="pr-1">🗓️</span>
-        {startDate + " - " + endDate}
+      <div className="flex flex-row gap-2 items-center text-sm">
+        <span className="pr-1">
+          <Calendar />
+        </span>
+        <span>{startDate + " - " + endDate}</span>
       </div>
 
-      <div className="text-sm">
-        <span className="pr-1">📍</span>
-        {location}
+      <div className="flex flex-row gap-2 items-center text-sm">
+        <span className="pr-1">
+          <MapPin />
+        </span>
+        <span>{location}</span>
       </div>
 
       <div className="flex flex-row gap-2 items-center">

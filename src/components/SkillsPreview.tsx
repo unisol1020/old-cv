@@ -1,9 +1,10 @@
 import skills from "@/const/skills";
-import { Button } from "./ui/button";
+import { motion, useInView } from "framer-motion";
+import { Hammer } from "lucide-react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Skill from "./Skill";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { Button } from "./ui/button";
 
 const SkillsPreview = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,7 +46,7 @@ const SkillsPreview = () => {
 
       <Link to="/skills">
         <Button variant="outline" size="lg">
-          Check my all skills 🛠
+          Check my all skills <Hammer className="ml-2" />
         </Button>
       </Link>
     </div>
