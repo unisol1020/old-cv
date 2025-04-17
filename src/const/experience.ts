@@ -1,6 +1,6 @@
 const experience = [
   {
-    title: "Software Developer (Angular, React, PHP, Node.js)",
+    title: "Software Developer (React, Next.js,Angular, Node.js)",
     company: "Yukon Software",
     location: "Chernivtsi, Ukraine",
     startDate: "02.2020",
