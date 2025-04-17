@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 const ExperiencePage = () => {
   return (
     <div className="flex flex-col gap-20 items-center pt-20">
-      <div className="text-3xl font-bold">My experience 👨‍💻</div>
+      <div className="text-3xl font-bold flex items-center gap-2">
+        My experience
+      </div>
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full"
@@ -37,6 +39,12 @@ const ExperiencePage = () => {
             </Card>
           </motion.div>
         ))}
+
+        <Card className="h-full">
+          <CardContent className="h-full flex justify-center items-center">
+            Coming soon...
+          </CardContent>
+        </Card>
       </motion.div>
     </div>
   );

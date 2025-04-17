@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 const SkillsPage = () => {
   return (
     <div className="flex flex-col gap-20 items-center pt-20">
-      <div className="text-3xl font-bold">All my skills 🛠</div>
+      <div className="text-3xl font-bold flex items-center gap-2">
+        All my skills
+      </div>
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
