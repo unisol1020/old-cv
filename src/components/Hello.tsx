@@ -34,33 +34,35 @@ const Hello = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.div
-          className="absolute -top-8 -right-6 md:top-0 md:right-10 text-yellow-400 opacity-80"
-          animate={{
-            rotate: [0, 5, -5, 0],
-            scale: [1, 1.2, 1, 1.1, 1],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        >
-          <Sparkles className="w-12 h-12" />
-        </motion.div>
-
         <span className="bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent pr-2 md:pr-4 drop-shadow-sm">
           Hi, I'm Max Levchuk
         </span>
 
-        <motion.div
-          className="origin-bottom"
-          initial="initial"
-          animate="animate"
-          variants={waveAnimation}
-        >
-          <Hand className="size-20 text-yellow-400" strokeWidth={1.5} />
-        </motion.div>
+        <div className="relative">
+          <motion.div
+            className="absolute -top-6 -left-4 text-yellow-400 opacity-80"
+            animate={{
+              rotate: [0, 5, -5, 0],
+              scale: [1, 1.2, 1, 1.1, 1],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+          >
+            <Sparkles className="w-12 h-12" />
+          </motion.div>
+
+          <motion.div
+            className="origin-bottom"
+            initial="initial"
+            animate="animate"
+            variants={waveAnimation}
+          >
+            <Hand className="size-20 text-yellow-400" strokeWidth={1.5} />
+          </motion.div>
+        </div>
       </motion.div>
 
       <motion.div
